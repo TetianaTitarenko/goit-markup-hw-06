@@ -240,6 +240,7 @@ ul {
      border: 1px solid rgba(0, 0, 0, 0.1);
      border-radius: 50%;
      cursor: pointer;
+     transition: var(--animation);
 }
 .modal-btm:hover,
 .modal-btm:focus {
@@ -251,9 +252,7 @@ ul {
 
 .register-form {
      display: block;
-     margin-left: 40px;
-     margin-right: 40px;
-     margin-top: 40px;
+     padding: 40px;
 }
 .register-form-title {
      display: block;
@@ -273,11 +272,11 @@ ul {
      display: block;
      position: relative;
      width: 448px;
+     margin-bottom: 10px;
 }
 .register-form-text {
      display: block;
      text-align: left;
-     margin-top: 10px;
      margin-bottom: 4px;
      font-weight: 400;
      font-size: 12px;
@@ -309,7 +308,7 @@ ul {
      position: absolute;
      bottom: 0;
      left: 15px;
-     transform: translateY(-11px);
+     transform: translateY(-14px);
 
      display: flex;
      align-items: center;
@@ -355,6 +354,9 @@ ul {
      letter-spacing: 0.03em;
      color: #757575;
      user-select: none;
+}
+.register-form-link {
+     color: var(--accent-color);
 }
 .form-agree-icon {
 }
@@ -727,11 +729,12 @@ ul {
      fill: currentColor;
 }
 .footer-subscription {
-     display: block;
+     display: flex;
+     width: ;
      margin-left: 93px;
 }
 .footer-form {
-     display: block;
+     /* display: flex; */
 }
 .footer-sub-title {
      display: block;
@@ -743,12 +746,17 @@ ul {
      text-transform: uppercase;
      color: var(--primary-bg-color);
 }
-.footer-sub {
+.footer-sub-box {
      display: flex;
      gap: 12px;
 }
+.footer-sub {
+     display: inline-block;
+     margin-right: 12px;
+     /* gap: 12px; */
+}
 .footer-sub-input {
-     display: block;
+     /* display: block; */
      box-sizing: border-box;
      width: 358px;
      height: 50px;
